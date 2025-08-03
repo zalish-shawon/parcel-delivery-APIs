@@ -1,6 +1,6 @@
-import { connectDB } from '../../database';
-import { hashPassword } from '../common/utils/bcrypt';
-import { UserModel } from '../user/user.model';
+import { connectDB } from '../database';
+import { hashPassword } from '../modules/common/utils/bcrypt';
+import { UserModel } from '../modules/user/user.model';
 
 (async () => {
   await connectDB();

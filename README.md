@@ -60,8 +60,8 @@ npm run ts-node src/seed/admin.seed.ts
 ```
 Default admin:
 ```
-email: admin@parcel.com
-password: Admin@123
+email: kate@example.com
+password: 123456
 ```
 
 ## API Endpoints
@@ -91,8 +91,6 @@ password: Admin@123
 - `GET /api/admin/parcels` – Get all parcels
 - `GET /api/admin/users` – Get all users (same as /api/users)
 
-## Postman Collection
-Import `postman_collection.json` included in the repository for testing.
 
 ## License
 MIT
