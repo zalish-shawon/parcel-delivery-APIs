@@ -8,14 +8,14 @@ export interface IStatusLog {
 }
 
 export interface IParcel {
-  sender: Types.ObjectId;    // <--- updated
-  receiver: Types.ObjectId;   // reference to receiver user
-  trackingId: string;  // unique tracking code
-  weight: number;      // in kg
-  address: string;     // delivery address
-  fee: number;         // calculated fee based on weight/distance
-  status: string;      // current status
-  isBlocked?: boolean; // admin may block
+  sender: Types.ObjectId;   
+  receiver: Types.ObjectId; 
+  trackingId: string;  
+  weight: number;      
+  address: string;     
+  fee: number;         
+  status: string;     
+  isBlocked?: boolean; 
   statusLogs: IStatusLog[];
   createdAt?: Date;
   updatedAt?: Date;
