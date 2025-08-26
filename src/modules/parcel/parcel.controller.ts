@@ -71,10 +71,10 @@ export const getIncomingParcels = async (req: Request, res: Response) => {
 export const trackParcel = async (req: Request, res: Response) => {
   try {
     const { trackingId } = req.params;
-    console.log("Tracking ID received:", trackingId);
+    // console.log("Tracking ID received:", trackingId);
 
     const parcel = await ParcelModel.findOne({ trackingId })
-    console.log("Parcel found:", parcel);
+    // console.log("Parcel found:", parcel);
 
     if (!parcel) {
       return res.status(404).json({ message: "Parcel not found" });
