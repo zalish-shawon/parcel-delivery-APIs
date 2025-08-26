@@ -8,15 +8,18 @@ export interface IStatusLog {
 }
 
 export interface IParcel {
-  sender: Types.ObjectId;   
-  receiver: Types.ObjectId; 
-  trackingId: string;  
-  weight: number;      
-  address: string;     
-  fee: number;         
-  status: string;     
-  isBlocked?: boolean; 
+  sender: Types.ObjectId;
+  receiver: Types.ObjectId;
+  trackingId: string;
+  weight: number;
+  address: string;
+  fee: number;
+  status: string;
+  isBlocked?: boolean;
   statusLogs: IStatusLog[];
   createdAt?: Date;
   updatedAt?: Date;
 }
+
+
+
